@@ -1,0 +1,34 @@
+---
+title: "Practicing GitHub"
+author: "Erica Oldaker"
+format: html
+editor: visual
+---
+
+```{r packages}
+library(tidyverse)
+```
+
+# GitHub Practice Document
+
+We are going to practice two things at once! The example below shows you how to add labels to plots.
+
+### Example
+
+```{r}
+ggplot(mpg, aes(displ, hwy)) +
+  geom_point(aes(color = class)) +
+  geom_smooth(se = FALSE) +
+  labs(
+    title = "Fuel efficiency generally decreases with engine size",
+    subtitle = "Two seaters (sports cars) are an exception because of their light weight",
+    caption = "Data from fueleconomy.gov",
+    x = "Engine displacement (L)",
+    y = "Highway fuel economy (mpg)",
+    color = "Car type"
+  )
+```
+
+## Your Turn!
+
+Pick an exploratory graphic you have created since the start of the practicum and paste the code below. Add labels to your graph to make it more understandable for others.
