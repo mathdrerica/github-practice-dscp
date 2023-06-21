@@ -32,10 +32,3 @@ ggplot(mpg, aes(displ, hwy)) +
 ## Your Turn!
 
 Pick an exploratory graphic you have created since the start of the practicum and paste the code below. Add labels to your graph to make it more understandable for others.
-
-**Make sure you are in YOUR branch before you make any changes.**
-
-```{r}
-ggplot(data = mpg, aes(x = hwy)) +
-  geom_histogram(fill = "lightblue")
-```
